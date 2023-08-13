@@ -6,4 +6,8 @@ public class Main {
         System.out.println("User's identifier: " + user.getIdentifier());
         System.out.println("User's session type: " + user.getSessionType());
     }
+
+//    public addUser() {
+//        // add User here
+//    }
 }
