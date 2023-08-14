@@ -20,4 +20,11 @@ public class User {
     public String getSessionType() {
         return sessionType;
     }
+
+    public void setSessionType(String sessionType) {
+        switch (sessionType) {
+            case "Solo", "Couple", "Family", "Portrait" -> this.sessionType = sessionType;
+            default -> System.out.println("Invalid session type provided.");
+        }
+    }
 }
