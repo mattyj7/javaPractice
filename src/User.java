@@ -21,6 +21,10 @@ public class User {
         return sessionType;
     }
 
+    public void setNameType(String name) {
+        this.name = name;
+    }
+
     public void setSessionType(String sessionType) {
         switch (sessionType) {
             case "Solo", "Couple", "Family", "Portrait" -> this.sessionType = sessionType;

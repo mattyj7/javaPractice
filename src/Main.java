@@ -14,6 +14,7 @@ public class Main {
     public static void changeSession(User user) {
         Scanner scanner = new Scanner(System.in);
         String newSession = scanner.nextLine();
-        user.getIdentifier();
+        user.setSessionType(newSession);
+        System.out.println("User's session type: " + user.getSessionType());
     }
 }
