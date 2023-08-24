@@ -21,7 +21,7 @@ public class User {
         return sessionType;
     }
 
-    public void setNameType(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
