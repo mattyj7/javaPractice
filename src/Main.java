@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        User user = new User("Matt", 1, "solo");
+        User user = new User("Matt", 1, "Solo");
         menu(user);
 
     }
@@ -47,6 +47,7 @@ public class Main {
         System.out.println("User's name: " + user.getName());
         System.out.println("User's identifier: " + user.getIdentifier());
         System.out.println("User's session type: " + user.getSessionType());
+        System.out.println("----------------");
     }
 
     public static void changeName(User user) {
@@ -54,7 +55,7 @@ public class Main {
         System.out.println(user.getName());
         String newSession = scanner.nextLine();
         user.setName(newSession);
-        System.out.println("User's session type: " + user.getName());
+        System.out.println("User's Name: " + user.getName());
     }
     public static void changeSession(User user) {
         Scanner scanner = new Scanner(System.in);
