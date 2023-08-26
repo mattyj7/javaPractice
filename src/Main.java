@@ -52,14 +52,14 @@ public class Main {
 
     public static void changeName(User user) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(user.getName());
+        System.out.println("Current name: " + user.getName());
         String newSession = scanner.nextLine();
         user.setName(newSession);
         System.out.println("User's Name: " + user.getName());
     }
     public static void changeSession(User user) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(user.getSessionType());
+        System.out.println("Current Session Type: " + user.getSessionType());
         String newSession = scanner.nextLine();
         user.setSessionType(newSession);
         System.out.println("User's session type: " + user.getSessionType());
