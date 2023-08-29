@@ -9,6 +9,7 @@ public class User {
         this.sessionType = sessionType;
     }
 
+
     public int getIdentifier() {
         return identifier;
     }

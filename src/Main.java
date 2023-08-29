@@ -31,6 +31,9 @@ public class Main {
                 case "Change session":
                     changeSession(user);
                     break;
+                case "Price":
+                    getPrice(user);
+                    break;
                 case "Exit":
                     System.out.println("Exiting the program.");
                     break;
@@ -47,6 +50,7 @@ public class Main {
         System.out.println("User's name: " + user.getName());
         System.out.println("User's identifier: " + user.getIdentifier());
         System.out.println("User's session type: " + user.getSessionType());
+        System.out.println("User's session price: " + user.getSessionType());
         System.out.println(" ");
     }
 
@@ -65,5 +69,9 @@ public class Main {
         user.setSessionType(newSession);
         System.out.println("User's session type: " + user.getSessionType());
         System.out.println(" ");
+    }
+
+    public static void getPrice(User user) {
+        Prices price = new Prices(user);
     }
 }
